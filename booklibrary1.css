@@ -1,0 +1,246 @@
+/* ნავბარი */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"BPG Nino Mtavruli Book", sans-serif;
+}
+/*css nav*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://s26162.pcdn.co/wp-content/uploads/2019/07/books.jpg);
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: test-anim;
+    animation-duration: 4s;
+    cursor:pointer ;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color:  white;
+    font-size: 27px;
+    position: relative;
+   font-family:"BPG Nino Mtavruli Book", sans-serif;
+
+}
+a:hover{
+    color: #ff523b;
+}
+/*end navbar*/
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 0px;
+}
+p{
+    color: #555;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 100px;
+
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px;
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+.btn{
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius:30px;
+    transition: background-color 0.5s;
+}
+.btn:hover{
+    background-color:#563434 ;
+
+}
+.header{
+    background-color: #f2f2f2;
+}
+/*category css*/
+.categories{
+    margin: 70px 0px;
+    
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+  
+}
+.col-3 img{
+    width:65% ;
+    
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 25px;
+    
+}
+/*end caregories*/
+/* featured*/
+.featured{
+    margin-bottom: 80px;
+
+}
+.col-4{
+    flex-basis: 23%;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 200px;
+    margin-bottom: 50px;
+    margin: 6px;
+    background: #f2f2f2;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background-color: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: orange;
+}
+.col-4:hover{
+    transform: translateX(-5px);
+}
+/*footer css*/
+.footer{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://s26162.pcdn.co/wp-content/uploads/2019/07/books.jpg);
+    color:#8a8a8a;
+    font-size: 14px;
+    margin-bottom: 0px;
+    
+}
+.container1{
+    margin-top: 250px;
+    position: relative;
+    min-height: 25vh;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    height: 2.5rem;   
+    
+}
+.footer p{
+    color:gold;
+}
+ .footer-col-2{
+
+    margin-bottom: 0px;
+}
+.footer-col-2{
+
+    text-align: center;
+}
+.footer-col-2 img{
+    
+    margin-bottom:0px ;
+}
+.wrapper{
+    padding:4% 28% ;
+}
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+.wrapper textarea{
+    resize: none;
+    height: 80px;
+}
+.wrapper .submitbtn input[type="submit"]{
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+.submitbtn{
+    margin: auto;
+    text-align: center;
+}
+#error_msg{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
